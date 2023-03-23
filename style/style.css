@@ -5,21 +5,29 @@
 }
 /* qui inizia il header */
 header{
-    height: 150px;
+    height: 100px;
     background-color: #000000;
-    position: fixed;
     width: 100%;
     z-index: 100;
+
 }
+
+nav{
+    height: 100px;
+    background-color: #000000;
+    width: 100%;
+    z-index: 101;
+    position: fixed;
+}
+
     /* qui inizia lo stile icon header */
 #nav-icon{
     color: white;
     position: absolute;
     display: flex;
     gap: 10px;
-    top: 50px;
+    top: 40px;
     right: 1%;
-
 }
 
 .icon-background-nav{
@@ -27,44 +35,107 @@ header{
     padding: 15px;
     border-radius: 10px;
 }
-    /* qui finisce lo stile icon header */
-
-/* qui finisce il header */
 
 /* qui inizia il main */
 
-.screen{
-    width: 100%;
-    height: 100vh;
-    position: relative;
+main{
+    background-color: black;
 }
 
+/* qui inizia lo screen */
+.screen{
+    height: calc(100vh-100px-100px);
+    background-color: #000000;;
+    width: 95%;
+    margin: auto;padding: 30px;
+}
+
+/* qui finisce lo screen */
+
+/* qui inizia controller e img */
+
 .controller{
-    height: 100px;
     width: 100%;
+    margin: auto;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+
+
+}
+
+.content{
+    width: 18%;
+    position: relative;
+}
+img{
+    max-width: 100%;
+}
+.name{
+    background-color: #4A4A4A;
+    color: white;
+    max-width: 45%;
+    padding: 3px;
     position: absolute;
-    bottom: 0%;
+    top: 80%;
     left: 0%;
 }
+/* qui finisce controller e img */
 
 /* qui finisce il main */
 
-/* DEBUG */
-.screen{
-    background-color: blueviolet;
+/* qui inizia il footer */
+footer{
+    height: 100px;
+    background-color: #222222;
+    position: relative;
+
+}
+
+#container{
+    height: 100px;
+    max-width: 100%;
+    background-color: #222222;
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: ;
+    z-index: 500;
 }
 
-.controller{
-    background-color: aqua;
-}
-
-.square-space{
+#f-left{
     display: flex;
-
-    height: 150px;
-    width: 150px;
-    background-color: burlywood;
+    width: 196px;
 }
+
+#f-center{
+    display: flex;
+    width: 620px;
+}
+
+.f-icon{
+    text-align: center;
+    color: #FDFDFC;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.icon{
+    font-size: 25px;
+    padding: 5px;
+}
+.green{
+    color: #4EC406 ;
+}
+
+button{
+    height: 100px;
+    color: red;
+    background-color: #4A4A4A;
+}
+
+
+/* qui finisce il footer */

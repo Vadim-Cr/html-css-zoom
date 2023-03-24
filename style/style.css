@@ -17,7 +17,7 @@ nav{
     background-color: #000000;
     width: 100%;
     z-index: 101;
-    position: fixed;
+    /* position: fixed; */
 }
 
     /* qui inizia lo stile icon header */
@@ -40,14 +40,17 @@ nav{
 
 main{
     background-color: black;
+    height:calc(100vh - 100px - 100px);
 }
 
 /* qui inizia lo screen */
 .screen{
-    height: calc(100vh-100px-100px);
+    /* height:calc(100vh-400px); */
     background-color: #000000;;
     width: 95%;
-    margin: auto;padding: 30px;
+    margin: auto;
+    padding: 30px;
+    overflow: auto;
 }
 
 /* qui finisce lo screen */
@@ -102,7 +105,6 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: ;
     z-index: 500;
 }
 
